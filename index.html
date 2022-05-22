@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZEN CONCEPTS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+        <a href="index.html">
+      <img class="header-logo" src="assets/logotext.png" alt="logotext" />
+        </a>
+      <nav>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+      <span class="material-icons nav-toggle" onclick="toggleMenu()">menu</span>
+    </header>
+    <main>
+      <section class="hero-page">
+        <h1 class="main-hero-text">Yo! I am a creative artist.</h1>
+        <p class="hero-under-text">making your vision a reality.</p>
+        <div class="Social-Media-Icons">
+          <a href="https://twitter.com/ZenConcepts_" rel="noreferrer noopener" class="Icons"><img src="/assets/sm_icons/twitter_icon.png" width="40" height="40" alt="Twitter"></a>
+          <a href="https://www.instagram.com/zenconcepts_/" rel="noreferrer noopener" class="Icons" ><img src="/assets/sm_icons/instagram_icon.png" width="40" height="40" alt="Instagram"></a>
+          <a href="https://www.youtube.com/channel/UC34brKcqL9BMKU_bemGTbTA" rel="noreferrer noopener" class="Icons" ><img src="/assets/sm_icons/youtube_icon.png" width="40" height="40" alt="Youtube"></a>
+        </div>
+      </section>
+      <section class="projects_page" id="projects">
+        <h1 class="projects_text">
+          PROJECTS
+        </h1>
+        <div class="Project_Hero_Images">
+          <a href="#" rel="noreferrer noopener" class="Service_Images"><img src="/assets/service_images/graphic design.png" alt="Twitter"></a>
+          <a href="#" rel="noreferrer noopener" class="Service_Images"><img src="/assets/service_images/Motion Design.png" alt="Twitter"></a>
+        </div>
+      </section>
+      <section class="contact_page" id="contact">
+        <div class="Contact_Info">
+          <h1 class="Contact_Wording">Contact me!</h1>
+          <p class="contact_subtitle">Fill out this form with any inquiries.</p>
+        </div>
+        <form class="contact_form" name="form" method="POST" data-netlify="true" >
+          <label for="Name">Name</label> <input placeholder="Name" name="Name" type="text">
+          <label for="Email">Email</label> <input placeholder="Email" name="Email" type="Email">
+          <label for="Message">Message</label> <textarea placeholder="Message" name="Message" id="" cols="30" rows="10"></textarea> 
+          <button>Submit</button>
+        </form>
+      </section>
+    </main>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="main.js"></script>
+  </body>
+</html>

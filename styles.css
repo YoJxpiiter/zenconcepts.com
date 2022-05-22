@@ -1,0 +1,179 @@
+@font-face {
+    font-family:Gotham Ultra;
+    src: url(assets/fonts/FontsFree-Net-Gotham-UltraItalic.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+body, html {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    background-color: #151515;
+}
+
+header{
+    width: 100%;
+    padding: 0% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #121212;
+    height: 100px;
+}
+
+.header-logo{
+    width: 125px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #f2f2f2;
+    font-family: Gotham Ultra;
+    font-size: 20px;
+    margin-left: 39px;
+}
+
+.nav-toggle{
+    color: #f2f2f2;
+    display: none !important;
+}
+
+h1{
+    font-family: Gotham Ultra;
+    font-size: 3.12rem;
+    margin: 0;
+    text-align: center;
+    color: #f2f2f2;
+    margin-top: 270px;
+}
+
+p {
+    font-family: Gotham Ultra;
+    font-size: 25px;
+    margin: 0;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+.hero-page {
+    min-height: 10vh;
+}
+
+.Social-Media-Icons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.Icons {
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.Project_Hero_Images {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+    padding: 0 10%; 
+}
+
+.Service_Images {
+    margin-right: 15px;
+    margin-top: 10px;
+    width: 50%;
+}
+
+.Service_Images > img {
+    width: 100%;
+}
+
+form {
+    margin-top: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    font-family: Gotham Ultra;
+}
+
+label {
+    color: #f2f2f2;
+    margin: 8px 0;
+}
+
+input, textarea {
+    padding: 12px 16px;
+}
+
+.contact_info {
+    width: 50%;
+}
+
+.contact_page {
+    display: flex;
+    flex-direction: row;
+    padding: 0 10%;
+    justify-content: space-between;
+    margin-top: 10rem;
+}
+
+.contact_page h1 {
+    margin-top: 10px;
+    text-align: left;
+}
+
+button {
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 960px) {
+    .nav-toggle {
+        display: block !important;
+    }
+
+    .nav--visible{
+        display: flex;
+        top: 100px;
+    }
+
+    nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        flex-direction: column;
+        background-color: #121212;
+        width: 100%;
+        padding: 5% 0;
+        text-align: center;
+        transition: top  0.4s ease;
+    }
+
+    .nav-link{
+        margin-bottom: 16px;
+    }
+
+    .Service_Images {
+        width: 100%;
+    }
+
+    .Project_Hero_Images {
+        flex-direction: column;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .contact_info {
+        width: 100%;
+    }
+
+    .contact_page {
+        flex-direction: column;
+    }
+}
