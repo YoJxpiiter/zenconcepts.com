@@ -23,6 +23,8 @@ header{
     justify-content: space-between;
     background-color: #121212;
     height: 100px;
+    position: fixed;
+    top: 0;
 }
 
 .header-logo{
@@ -108,6 +110,7 @@ label {
 input, textarea {
     padding: 12px 16px;
     font-family: Gotham Ultra;
+    border-radius: 5px;
 }
 
 .contact_info {
@@ -120,6 +123,7 @@ input, textarea {
     padding: 0 10%;
     justify-content: space-between;
     margin-top: 10rem;
+    margin-bottom: 3rem;
 }
 
 .contact_page h1 {
@@ -135,7 +139,40 @@ button {
     font-family: Gotham Ultra;
     padding: 12px 16px;
     font-size: 1.2rem;
+    border-radius: 5px;
 }
+
+.footer_logo img {
+    width: 90px;
+}
+
+.footer_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer_nav a {
+    color: #f2f2f2;
+    font-family: Gotham Ultra;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin-right: 1rem;
+}
+
+.footer_Icons {
+    margin-right: 10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10%;
+    align-items: center;
+    background-color: #121212;
+}
+
 
 @media screen and (max-width: 960px) {
     .nav-toggle {
@@ -182,5 +219,19 @@ button {
 
     .contact_page {
         flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .footer_nav a {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .footer_nav {
+        flex-direction: column;
+        margin-bottom: 12px;
     }
 }
